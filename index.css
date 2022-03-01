@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+    color: black;
+}
+body{
+    width: 1200px;
+    background-color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+/* //////////////////////////////////네비게이션,로고///////////////////////////////// */
+.top{
+    width: 1200px;
+    height: 100px;
+}
+.logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+.logo img{
+    width: 200px;
+    height: 40px;
+    margin: 20px 20px;
+}
+.menu{
+    float:right;
+    width: 800px;
+    height: 100px;
+    z-index: 100;
+}
+.navi{
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.navi>li{
+    float: left;
+}
+.navi>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+.navi>li>a:hover{
+    background-color: skyblue;
+}
+.submenu{
+    width: 180px;
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+.submenu>li>a{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ababab;
+    color: white;
+}
+.submenu>li>a:hover{
+    background-color: skyblue;
+    color: yellow;
+}
+/* ////////////////////////////////메인바디/////////////////////////////////////////// */
+.bodywrap{
+    width: 1200px;
+    height: 500px;
+}
+.imgslide{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.imgslide>a{
+    display: block;
+    position: absolute;
+}
+.imgtext{
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    margin: -30px 0 0 -250px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40, 40, 40, 0.5);
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.contents{
+    float: left;
+    width: 1200px;
+    height: 200px;
+    position: absolute;
+}
+.tabmenu{
+    float: left;
+    width: 395px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tabmenu>li{
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabmenu>li>a{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+.tabmenu>li>a:hover{
+    background-color: #eeeeee;
+}
+.tabmenu>li:first-child a{
+    border-right: none;
+}
+.tabmenu>li.active>a{
+    background-color: #ffffff;
+}
+.tabmenu>li div{
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+}
+.tabmenu>li.active div{
+    width: 393px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 100;
+}
+.notice ul{
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.notice li:nth-child(2n){
+    background-color: #cccccc;
+}
+.notice li span{
+    float: right;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+.gallery li{
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.gallery img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+.otherwrap{
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+.banner{
+    float: left;
+    width: 395px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner img{
+    float: left;
+    height: 180px;
+    width: 395px;
+}
+.bntext{
+    float: left;
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 450px;
+    top: 80px;
+}
+.banner img:hover{
+    opacity: 0.5;
+}
+
+.shortcut{
+    float: right;
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shortcut img{
+    float: right;
+    width: 400px;
+    height: 180px;
+}
+.sctext{
+    float: right;
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 850px;
+    top: 80px;
+}
+.shortcut img:hover{
+    opacity: 0.5;
+}
+/* ///////////////////////////////////////modal자리//////////////////////////////////////////// */
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    background-color: white;
+}
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* ////////////////////////////////////footer자리/////////////////////////////////////////////// */
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color: gray;
+}
+.btlogo{
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+.btlogo img{
+    float: left;
+    height: 42px;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.site{
+    float: right;
+    width: 600px;
+    height: 100px;
+}
+.btmenu{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+.btmenu li{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+}
+.btmenu li:hover{
+    font-weight: bold;
+}
+.copy{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+}
